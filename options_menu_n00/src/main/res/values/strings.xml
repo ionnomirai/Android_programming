@@ -8,4 +8,6 @@
     <string name="yellow_color_item">Yellow</string>
     <string name="pink_color_item">Pink</string>
     <string name="white_color_item">White</string>
+
+    <string name="label_cur_color">Background: %1$s color</string>
 </resources>
