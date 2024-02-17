@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        /* Refresh the screen when the Activity is displayed. */
+        refreshScreen(R.string.white_color_item, R.color.white)
+
         //Connection the toolbar(tb1)
         setSupportActionBar(binding.tb1)
     }
@@ -32,15 +35,18 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.iBlue -> refreshScreen(R.string.blue_color_item, R.color.blue)
-            R.id.iRed -> Toast.makeText(this, "Red", Toast.LENGTH_LONG).show()
-            R.id.iGreen -> Toast.makeText(this, "Green", Toast.LENGTH_LONG).show()
-            R.id.iYellow -> Toast.makeText(this, "Yellow", Toast.LENGTH_LONG).show()
-            R.id.iPink -> Toast.makeText(this, "Pink", Toast.LENGTH_LONG).show()
-            R.id.iWhite -> Toast.makeText(this, "iWhite", Toast.LENGTH_LONG).show()
+            R.id.iRed -> refreshScreen(R.string.red_color_item, R.color.red)
+            R.id.iGreen -> refreshScreen(R.string.green_color_item, R.color.green)
+            R.id.iYellow -> refreshScreen(R.string.yellow_color_item, R.color.yellow)
+            R.id.iPink -> refreshScreen(R.string.pink_color_item, R.color.pink)
+            R.id.iWhite -> refreshScreen(R.string.white_color_item, R.color.white)
         }
         return super.onOptionsItemSelected(item)
     }
 
+    /* Update the data on the screen with the data specified in the function parameters:
+    * - text in TextView.
+    * - background color.*/
     private fun refreshScreen(@StringRes colorName: Int, @ColorRes colorId: Int){
         val cName = getString(colorName)
         binding.apply {
