@@ -3,6 +3,7 @@
     <style name="Base.Theme.Options_menu_n00" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/dark_yellow</item>
     </style>
 
     <style name="Theme.Options_menu_n00" parent="Base.Theme.Options_menu_n00" />
