@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Options_menu_n00</string>
+
+    <string name="toolbar_name">Options menu</string>
+    <string name="item_container">Container</string>
+    <string name="blue_color_item">Blue</string>
+    <string name="red_color_item">Red</string>
+    <string name="green_color_item">Green</string>
+    <string name="yellow_color_item">Yellow</string>
+    <string name="pink_color_item">Pink</string>
+    <string name="white_color_item">White</string>
+
+    <string name="label_cur_color">Background: %1$s color</string>
+</resources>

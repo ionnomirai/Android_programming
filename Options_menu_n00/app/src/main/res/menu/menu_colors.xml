@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/iBlue"
+        android:title="@string/blue_color_item"
+        android:icon="@drawable/ic_square_24"
+        app:iconTint="@color/blue"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/iRed"
+        android:title="@string/red_color_item"
+        android:icon="@drawable/ic_square_24"
+        app:iconTint="@color/red"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/iContainer"
+        android:title="@string/item_container"
+        android:icon="@drawable/ic_more_vert_24"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/iGreen"
+                android:title="@string/green_color_item"
+                android:icon="@drawable/ic_square_24"
+                app:iconTint="@color/green"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/iYellow"
+                android:title="@string/yellow_color_item"
+                android:icon="@drawable/ic_square_24"
+                app:iconTint="@color/yellow"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/iPink"
+                android:title="@string/pink_color_item"
+                android:icon="@drawable/ic_square_24"
+                app:iconTint="@color/pink"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/iWhite"
+                android:title="@string/white_color_item"
+                android:icon="@drawable/ic_square_24"
+                app:iconTint="@color/white"
+                app:showAsAction="ifRoom" />
+        </menu>
+
+    </item>
+</menu>
